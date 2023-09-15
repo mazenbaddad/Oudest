@@ -16,6 +16,7 @@
 		AFA6FEE72AB4976F00A16A3A /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEE62AB4976F00A16A3A /* Interval.swift */; };
 		AFA6FEEC2AB4DB6F00A16A3A /* UIView-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEEB2AB4DB6F00A16A3A /* UIView-extension.swift */; };
 		AFA6FEEF2AB4E15000A16A3A /* ScalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEEE2AB4E15000A16A3A /* ScalesViewController.swift */; };
+		AFA6FEF12AB4E21B00A16A3A /* SelectionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEF02AB4E21B00A16A3A /* SelectionControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AFA6FEE62AB4976F00A16A3A /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
 		AFA6FEEB2AB4DB6F00A16A3A /* UIView-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-extension.swift"; sourceTree = "<group>"; };
 		AFA6FEEE2AB4E15000A16A3A /* ScalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalesViewController.swift; sourceTree = "<group>"; };
+		AFA6FEF02AB4E21B00A16A3A /* SelectionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				AFA6FEC82AB36C6700A16A3A /* AppDelegate.swift */,
-				AFA6FEED2AB4E10000A16A3A /* New Group */,
 				AFA6FEEA2AB4DB5600A16A3A /* helpers */,
 				AFA6FEDF2AB36E3500A16A3A /* model */,
+				AFA6FEED2AB4E10000A16A3A /* view */,
 				AFA6FEDE2AB36E2200A16A3A /* controller */,
 				AFA6FED12AB36C6900A16A3A /* Assets.xcassets */,
 				AFA6FED32AB36C6900A16A3A /* LaunchScreen.storyboard */,
@@ -101,11 +103,12 @@
 			path = helpers;
 			sourceTree = "<group>";
 		};
-		AFA6FEED2AB4E10000A16A3A /* New Group */ = {
+		AFA6FEED2AB4E10000A16A3A /* view */ = {
 			isa = PBXGroup;
 			children = (
+				AFA6FEF02AB4E21B00A16A3A /* SelectionControl.swift */,
 			);
-			path = "New Group";
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA6FEF12AB4E21B00A16A3A /* SelectionControl.swift in Sources */,
 				AFA6FEEF2AB4E15000A16A3A /* ScalesViewController.swift in Sources */,
 				AFA6FEC92AB36C6700A16A3A /* AppDelegate.swift in Sources */,
 				AFA6FEE72AB4976F00A16A3A /* Interval.swift in Sources */,
