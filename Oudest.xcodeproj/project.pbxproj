@@ -10,11 +10,12 @@
 		AFA6FEC92AB36C6700A16A3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEC82AB36C6700A16A3A /* AppDelegate.swift */; };
 		AFA6FED22AB36C6900A16A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA6FED12AB36C6900A16A3A /* Assets.xcassets */; };
 		AFA6FED52AB36C6900A16A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA6FED32AB36C6900A16A3A /* LaunchScreen.storyboard */; };
-		AFA6FEDD2AB36D4800A16A3A /* ScalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEDC2AB36D4800A16A3A /* ScalesViewController.swift */; };
 		AFA6FEE12AB36E5300A16A3A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEE02AB36E5300A16A3A /* Note.swift */; };
 		AFA6FEE32AB3714800A16A3A /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEE22AB3714800A16A3A /* Scale.swift */; };
 		AFA6FEE52AB374CB00A16A3A /* Tuning.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEE42AB374CB00A16A3A /* Tuning.swift */; };
 		AFA6FEE72AB4976F00A16A3A /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEE62AB4976F00A16A3A /* Interval.swift */; };
+		AFA6FEEC2AB4DB6F00A16A3A /* UIView-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEEB2AB4DB6F00A16A3A /* UIView-extension.swift */; };
+		AFA6FEEF2AB4E15000A16A3A /* ScalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6FEEE2AB4E15000A16A3A /* ScalesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		AFA6FED12AB36C6900A16A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA6FED42AB36C6900A16A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA6FED62AB36C6900A16A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFA6FEDC2AB36D4800A16A3A /* ScalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalesViewController.swift; sourceTree = "<group>"; };
 		AFA6FEE02AB36E5300A16A3A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		AFA6FEE22AB3714800A16A3A /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
 		AFA6FEE42AB374CB00A16A3A /* Tuning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuning.swift; sourceTree = "<group>"; };
 		AFA6FEE62AB4976F00A16A3A /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		AFA6FEEB2AB4DB6F00A16A3A /* UIView-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-extension.swift"; sourceTree = "<group>"; };
+		AFA6FEEE2AB4E15000A16A3A /* ScalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				AFA6FEC82AB36C6700A16A3A /* AppDelegate.swift */,
+				AFA6FEED2AB4E10000A16A3A /* New Group */,
+				AFA6FEEA2AB4DB5600A16A3A /* helpers */,
 				AFA6FEDF2AB36E3500A16A3A /* model */,
 				AFA6FEDE2AB36E2200A16A3A /* controller */,
 				AFA6FED12AB36C6900A16A3A /* Assets.xcassets */,
@@ -73,7 +77,7 @@
 		AFA6FEDE2AB36E2200A16A3A /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				AFA6FEDC2AB36D4800A16A3A /* ScalesViewController.swift */,
+				AFA6FEEE2AB4E15000A16A3A /* ScalesViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -87,6 +91,21 @@
 				AFA6FEE42AB374CB00A16A3A /* Tuning.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		AFA6FEEA2AB4DB5600A16A3A /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AFA6FEEB2AB4DB6F00A16A3A /* UIView-extension.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		AFA6FEED2AB4E10000A16A3A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA6FEEF2AB4E15000A16A3A /* ScalesViewController.swift in Sources */,
 				AFA6FEC92AB36C6700A16A3A /* AppDelegate.swift in Sources */,
-				AFA6FEDD2AB36D4800A16A3A /* ScalesViewController.swift in Sources */,
 				AFA6FEE72AB4976F00A16A3A /* Interval.swift in Sources */,
+				AFA6FEEC2AB4DB6F00A16A3A /* UIView-extension.swift in Sources */,
 				AFA6FEE52AB374CB00A16A3A /* Tuning.swift in Sources */,
 				AFA6FEE32AB3714800A16A3A /* Scale.swift in Sources */,
 				AFA6FEE12AB36E5300A16A3A /* Note.swift in Sources */,
