@@ -9,7 +9,7 @@ import Foundation
 
 struct Scale {
     var name: String
-    var key: Note // e = 7      f = 8
+    var key: Note
     var intervals: Array<Interval>
     var notes: Array<Note> {
         var notes: Array<Note> = []
