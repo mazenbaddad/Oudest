@@ -8,7 +8,6 @@
 import Foundation
 
 struct Tuning {
-    typealias Position = Int
     var name: String
-    var notesPosition: Dictionary<Note, Position>
+    var keyNotes: Array<Note>
 }
