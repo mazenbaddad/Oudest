@@ -21,7 +21,7 @@ enum Note: Int, CaseIterable {
     case g
     case gSharp
     
-    var description: String {
+    var name: String {
         switch self {
         case .a     : return "A"
         case .aSharp: return "A#"
@@ -39,6 +39,9 @@ enum Note: Int, CaseIterable {
     }
     
     var next: Note {
-        return Note(rawValue: self.rawValue) ?? .a
+        let noteIndex = rawValue
+        let numberOfNotes = Note.allCases.count
+        let nextNoteIndex = (noteIndex + 1) % numberOfNotes
+        return Note(rawValue: nextNoteIndex) ?? .a
     }
 }

@@ -20,6 +20,7 @@ class SelectionLabel: SelectionView {
     }
     
     private func setupSelectionTitleLabel() {
+        selectionTitleLabel.textAlignment = .center
         selectionTitleLabel.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(selectionTitleLabel)
         selectionTitleLabel.anchor(axisAnchors: .leading(self.leadingAnchor, constant: 8)
